@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.basketballscorecounter.MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context="com.example.android.basketballscorecounter.MainActivity">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical"
+            tools:context="com.example.android.basketballscorecounter.MainActivity">
+
+            <TextView
+                android:id="@+id/TeamA_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team A"
+
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/TeamA_Score_Text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:layout_marginTop="16dp"
+
+                />
+
+            <Button
+                android:id="@+id/TeamA_Button_three_points"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="aincrementThree"
+                android:text="+3 points"
+
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginRight="8dp"
+                />
+
+            <Button
+                android:id="@+id/TeamA_Button_two_points"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="aincrementTwo"
+                android:text="+2 points"
+
+                android:textAllCaps="true"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginRight="8dp"
+                />
+
+            <Button
+                android:id="@+id/TeamA_Button_free_throw"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="aincrementOne"
+                android:text="Free throw"
+
+                android:textAllCaps="true"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginRight="8dp"
+                />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/TeamB_Linear_Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            tools:context="com.example.android.basketballscorecounter.MainActivity">
+
+            <TextView
+                android:id="@+id/TeamB_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team B"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/TeamB_Score_Text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:layout_marginTop="16dp"
+                />
+
+            <Button
+                android:id="@+id/TeaB_Button_three_points"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="bincrementThree"
+                android:text="+3 points"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textAllCaps="true"
+
+                />
+
+            <Button
+                android:id="@+id/TeamB_Button_two_points"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="bincrementTwo"
+                android:text="+2 points"
+
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginRight="8dp"
+                />
+
+            <Button
+                android:id="@+id/TeamB_Button_free_throw"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="bincrementOne"
+                android:text="Free throw"
+
+                android:textAllCaps="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_marginRight="8dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"
+        android:onClick="reset"
+        android:text="reset"
+        android:textAllCaps="true" />
+</RelativeLayout>
